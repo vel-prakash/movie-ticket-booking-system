@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #edf3fa;
+    margin: 0;
+    padding: 20px;
+    color: #243653;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #243b60;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+header h1, header p {
+    margin: 5px;
+}
+
+.panel {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.movies, .booking-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.movie {
+    background: #f0f5fa;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.booking-area {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+
+#booked, #bookings {
+    min-width: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background: #3478df;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#booked form button[type="reset"] {
+    background: #858b95;
+}
+
+#total {
+    background: #e5f1ff;
+    padding: 10px;
+}
+
+#message {
+    overflow-wrap: anywhere;
+}
+
+.bookingCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.bookingCard p {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.bookingCard button {
+    background: crimson;
+}
+
+@media (max-width: 650px) {
+    .movies, .booking-area {
+        grid-template-columns: 1fr;
+    }
+}
